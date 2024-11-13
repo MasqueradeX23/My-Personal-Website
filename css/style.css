@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+.navbar-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1a1a40;
+    align-items: center;
+    padding: 10px 10px;
+    font-family: "Montserrat", sans-serif;
+    color: #dcdcdc;
+    position: sticky;  /* Bu özellik navbar'ı sabitler */
+    top: 0;            /* Sayfa kaydırıldığında üst kısımda kalmasını sağlar */
+    z-index: 1000;     /* Diğer içeriklerin üzerine çıkması için */
+
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+    letter-spacing: 1px;
+}
+#list-1{
+    -webkit-animation: slide-in-blurred-right 3s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+	        animation: slide-in-blurred-right 3s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+@-webkit-keyframes slide-in-blurred-right {
+    0% {
+      -webkit-transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+              transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+      -webkit-transform-origin: 0% 50%;
+              transform-origin: 0% 50%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+              transform: translateX(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-blurred-right {
+    0% {
+      -webkit-transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+              transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+      -webkit-transform-origin: 0% 50%;
+              transform-origin: 0% 50%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+              transform: translateX(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+#list-2{
+    -webkit-animation: slide-in-blurred-right-two 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+	 animation: slide-in-blurred-right-two 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+
+}  
+@-webkit-keyframes slide-in-blurred-right-two {
+    0% {
+      -webkit-transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+              transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+      -webkit-transform-origin: 0% 50%;
+              transform-origin: 0% 50%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+              transform: translateX(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-blurred-right-two {
+    0% {
+      -webkit-transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+              transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+      -webkit-transform-origin: 0% 50%;
+              transform-origin: 0% 50%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+              transform: translateX(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+#list-3{
+    -webkit-animation: slide-in-blurred-right-tree 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    animation: slide-in-blurred-right-tree 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+@-webkit-keyframes slide-in-blurred-right-tree {
+    0% {
+      -webkit-transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+              transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+      -webkit-transform-origin: 0% 50%;
+              transform-origin: 0% 50%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+              transform: translateX(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-blurred-right-tree {
+    0% {
+      -webkit-transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+              transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+      -webkit-transform-origin: 0% 50%;
+              transform-origin: 0% 50%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+              transform: translateX(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+
+
+li a {
+    text-decoration: none;
+    color: #dcdcdc;
+}
+
+h1 {
+    padding: 10px;
+    letter-spacing: 2px;
+    -webkit-animation: slide-in-blurred-top 1.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+	animation: slide-in-blurred-top 1.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+@-webkit-keyframes slide-in-blurred-top {
+    0% {
+      -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+              transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+              transform: translateY(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-blurred-top {
+    0% {
+      -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+              transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+              transform: translateY(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  .navbar-header ul li:hover {
+    background-color: #4c4c80; /* Hover'da açık mor tonları */
+    color: #ffffff; /* Metin beyaz kalacak */
+    transform: translateY(-3px); /* Link hafif yukarı kayacak */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Hafif bir gölge efekti */
+}
+  
+
+/* Content Me */
+.content-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Resmi ve yazıyı ortalar */
+    align-items: center;
+    height: 100vh;
+    background: url('/img/background.webp') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Resim için yuvarlak şekil */
+.image-container {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%; /* Yuvarlak resim */
+    border: 5px solid #fff;
+    margin-bottom: 20px; /* Resim ile yazı arasına boşluk ekler */
+    animation-duration: 2s;
+    animation-name: slide-up;
+}
+@keyframes slide-up {
+    from {
+      translate: -150vw 0;
+      scale: 200% 1;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+  }
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Hakkımda yazısı */
+.about-me {
+    text-align: center; /* Yazıyı ortalar */
+    color: white;
+    max-width: 600px; /* Yazının genişliğini sınırlayıp okunabilir hale getirmek */
+    font: 20px Montserrat, sans-serif;
+    animation-duration: 2s;
+    animation-name: slide-in;
+}
+@keyframes slide-in {
+    from {
+      translate: 150vw 0;
+      scale: 200% 1;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+  }
+  
+
+.about-me h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.about-me p {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+/*Content Services*/
+.section-title {
+        text-align: center;  /* Başlığı yatayda ortalar */
+        font-size: 2rem;     /* Başlık boyutunu büyütür */
+        font-weight: bold;   /* Başlık yazısını kalın yapar */
+        margin-top: 40px;    /* Başlık üstünden boşluk bırakır */
+        margin-bottom: 20px; /* Başlık ile altındaki içerik arasında boşluk bırakır */
+        color: #333;         /* Başlık rengini koyu gri yapar */
+        letter-spacing: 1px;
+    }
+.content-services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 15px 0;
+    font-size: 1.5em;
+}
+
+.card p {
+    color: #666;
+    font-size: 1em;
+}
+/* Contact Section Styling */
+.contact-section {
+    padding: 50px 20px;
+    background-color: #f4f4f9;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.contact-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-section p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    position: relative;
+}
+
+.form-group label {
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: #333;
+    display: block;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    resize: none;
+
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #1a1a40;
+}
+
+.submit-button {
+    background-color: #1a1a40;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #333;
+}
+
+/* From Uiverse.io by Amine-maker */ 
+#label-input {
+    transition: all 0.1s ease-in-out;
+    color: #2c2c54;
+    position: absolute;
+    top: 30%;
+    left: 18px;
+    transform: scale(0.95);
+    opacity: 1;
+    pointer-events: none;
+  }
+  
+  .input-base {
+    border-radius: 10px;
+  }
+  
+  #input:focus ~ label#label-input,
+  #input:not(:placeholder-shown) ~ #label-input {
+    top: -20% !important;
+    left: 2px !important;
+    transform: scale(0.8);
+    background: white;
+    color: black;
+    padding: 0 6px;
+    opacity: 1;
+  }
+  
+  #input {
+    transition: outline 0.2s ease;
+    font-size: 1rem;
+    outline-color: var(--button-text);
+    outline: unset;
+    border: 1px solid #bbbbbb;
+    padding: 17px 10px 10px 17px;
+    width: 100%;
+  }
+  
+  #input:focus {
+    box-shadow: 0 0 0 1px #e8e8e8, 0 0 0 3px rgb(92, 127, 202);
+  }
+/*Contact-Cardse*/
+#contact .contact-items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    /* Kartlar */
+    #contact .contact-item {
+        display: flex;
+        width: 30%;
+        margin: 0;
+        background-color: #f2f2f2; /* Arka plan rengi */
+        border-radius: 10px; /* Köşeleri yuvarlat */
+        padding: 20px; /* İçerik ile kenarlar arasında boşluk */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Gölge efekti */
+        transition: transform 0.3s ease; /* Hover animasyonu */
+        margin-bottom: 20px;
+    }
+    
+    /* 1113px ve daha küçük ekranlar için */
+    @media (max-width: 1113px) {
+        #contact .contact-items {
+            flex-direction: column; /* Kartları üst üste diz */
+            align-items: center;
+        }
+        
+        #contact .contact-item {
+            width: 60%; /* Kartların genişliği ekran genişliğinin %60'ı olur */
+            margin-bottom: 20px; /* Kartlar arasında boşluk bırak */
+;
+        }
+    }
+/* Footer */
+#main-footer {
+        background-color: #333; /* Koyu gri arka plan rengi */
+        color: #fff; /* Beyaz yazı rengi */
+        padding: 40px 0;
+        text-align: center;
+        font-family: 'Arial', sans-serif;
+      }
+      
+      .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .footer-links {
+        margin-bottom: 20px;
+      }
+      
+      .footer-links a {
+        color: #fff; /* Bağlantıların rengi beyaz */
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 16px;
+      }
+      
+      .footer-links a:hover {
+        text-decoration: underline;
+      }
+      
+      .footer-social a {
+        margin: 0 10px;
+      }
+      
+      .footer-social img {
+        width: 40px;
+        height: 40px;
+        transition: transform 0.3s ease;
+      }
+      
+      .footer-social a:hover img {
+        transform: scale(1.1); /* Hover üzerinde ikon büyüme efekti */
+      }
+      
+      .footer-copyright {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #ccc; /* Telif hakkı kısmı için daha soluk bir beyaz */
+      }
+      
+      @media (max-width: 768px) {
+        .footer-links a {
+          margin: 0 10px;
+          font-size: 14px;
+        }
+        
+        .footer-social img {
+          width: 30px;
+          height: 30px;
+        }
+      }
+      /*404*/
+      .body-2{
+        display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background: #131313;
+  color: #fff;
+  font-size: 96px;
+  font-family: 'Fira Mono', monospace;
+  letter-spacing: -7px;
+      }
+      .body-2 div{
+        animation: glitch 1s linear infinite;
+      }
+      
+      @keyframes glitch{
+        2%,64%{
+          transform: translate(2px,0) skew(0deg);
+        }
+        4%,60%{
+          transform: translate(-2px,0) skew(0deg);
+        }
+        62%{
+          transform: translate(0,0) skew(5deg); 
+        }
+      }
+      
+      div:before,
+      div:after{
+        content: attr(title);
+        position: absolute;
+        left: 0;
+      }
+      
+      div:before{
+        animation: glitchTop 1s linear infinite;
+        clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+      }
+      
+      @keyframes glitchTop{
+        2%,64%{
+          transform: translate(2px,-2px);
+        }
+        4%,60%{
+          transform: translate(-2px,2px);
+        }
+        62%{
+          transform: translate(13px,-1px) skew(-13deg); 
+        }
+      }
+      
+      div:after{
+        animation: glitchBotom 1.5s linear infinite;
+        clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+        -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+      }
+      
+      @keyframes glitchBotom{
+        2%,64%{
+          transform: translate(-2px,0);
+        }
+        4%,60%{
+          transform: translate(-2px,0);
+        }
+        62%{
+          transform: translate(-22px,5px) skew(21deg); 
+        }
+      }
+      

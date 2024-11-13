@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masquerade - Kişisel Web Sitesi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar-header">
+        <h1>Masquerade</h1>
+        <ul>
+            <li id="list-1"><a href="#">Anasayfa</a></li>
+            <li id="list-2"><a href="#">Kimdir</a></li>
+            <li id="list-3"><a href="#">Projeler</a></li>
+        </ul>
+    </nav>
+
+    <!-- Content Me -->
+    <div class="content-me">
+        <div class="image-container">
+            <a href="404.html"><img src="img/masquerade.png" alt="Burhan Akbaba"></a>
+        </div>
+        <div class="about-me">
+            <h2>HAKKIMDA</h2>
+            <p>
+                Merhaba! Ben Masquerade, yazılım geliştiricisi ve teknoloji meraklısıyım. 
+                Bu web sitesi, benim hakkımda daha fazla bilgi edinmeniz için oluşturuldu. 
+                Kodlama dünyasında sürekli öğreniyor ve projeler geliştirmeye devam ediyorum.
+            </p>
+        </div>
+    </div>
+    <!--Content Services-->
+    <h2 class="section-title">ÖĞRENDİKLERİM</h2>
+    <div class="content-services">
+        <div class="card">
+            <img src="img/html.png" alt="Service 1" class="card-image">
+            <h3>Ön Yüz Geliştirme</h3>
+            <p>HTML, CSS ve JavaScript kullanarak modern, kullanıcı dostu web arayüzleri oluşturuyorum. Web standartlarına uygun, esnek ve etkileyici tasarımlar geliştiriyorum.</p>
+        </div>
+        <div class="card">
+            <img src="img/csharp.jpg" alt="Service 2" class="card-image">
+            <h3>C# Programlama</h3>
+            <p>C# ile güçlü, verimli ve güvenli uygulamalar geliştiriyorum. Nesne yönelimli programlama, API entegrasyonu ve Windows uygulamaları gibi geniş bir yelpazede çözümler sunuyorum.</p>
+        </div>
+        <div class="card">
+            <img src="img/swift.jpg" alt="Service 3" class="card-image">
+            <h3>Swift Programlama</h3>
+            <p>Swift ile iOS ve macOS uygulamaları geliştiriyorum. Kullanıcı dostu, performans odaklı ve modern uygulamalar tasarlayarak Apple ekosisteminde verimli çözümler üretiyorum.</p>
+        </div>
+    </div>
+    <!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <h2>İletişim</h2>
+    <p>Herhangi bir sorunuz veya iş birliği için bana ulaşın!</p>
+    
+    <form class="contact-form">
+        <div class="form-group">
+              <input class="input-cal input-base" id="input" placeholder="" type="text" required>
+              <label id="label-input">Name</label>      
+        </div>
+        
+        <div class="form-group">
+            <input class="input-cal input-base" id="input" placeholder="" type="email" required>
+            <label id="label-input"> E-posta </label>
+         </div>
+        
+        <div class="form-group">
+            <textarea id="message" name="message" rows="5" required placeholder="Mesajınız..."></textarea>
+        </div>
+        
+        <button type="submit" class="submit-button">Gönder</button>
+    </form>
+</section>
+<!--Contact-cards-->
+<section id="contact">
+    <div class="contact container">
+        <div>
+            <h1 class="section-title">İletişim <span>Adresim</span></h1>
+        </div>
+        <div class="contact-items">
+            <div class="contact-item">
+                <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" alt="Phone Icon"/></div>
+                <div class="contact-info">
+                    <h1>Telefon</h1>
+                    <h2>+90 123 123 1234</h2>
+                    <h2>+90 123 123 1234</h2>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" alt="Email Icon"/></div>
+                <div class="contact-info">
+                    <h1>Email</h1>
+                    <h2>info@gmail.com</h2>
+                    <h2>abcd@gmail.com</h2>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" alt="Address Icon"/></div>
+                <div class="contact-info">
+                    <h1>Adres</h1>
+                    <h2>Mardin Midyat</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer -->
+<footer id="main-footer">
+    <div class="footer-container">
+      <div class="footer-links">
+        <a href="#home">Ana Sayfa</a>
+        <a href="#about">Hakkımızda</a>
+        <a href="#services">Hizmetler</a>
+        <a href="#contact">İletişim</a>
+      </div>
+  
+      <div class="footer-social">
+        <a href="https://www.facebook.com" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/facebook-new.png" /></a>
+        <a href="https://www.twitter.com" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/twitter.png" /></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" /></a>
+        <a href="https://www.linkedin.com" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/linkedin.png" /></a>
+      </div>
+  
+      <div class="footer-copyright">
+        <p>© 2024 Tüm hakları saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+<script src="js/script.js"></script>
+</body>
+</html>
