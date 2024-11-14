@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
+html {
+  scroll-behavior: smooth;
+}
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Header */
@@ -17,7 +20,15 @@
     position: sticky;  /* Bu özellik navbar'ı sabitler */
     top: 0;            /* Sayfa kaydırıldığında üst kısımda kalmasını sağlar */
     z-index: 1000;     /* Diğer içeriklerin üzerine çıkması için */
+    width: 100%;
 
+}
+.navbar-header h1 a{
+  text-decoration: none;
+  color: #fff;
+}
+.navbar-header h1 a:hover{
+  color: #551a8b;
 }
 
 ul {
@@ -220,6 +231,7 @@ h1 {
     color: #ffffff; /* Metin beyaz kalacak */
     transform: translateY(-3px); /* Link hafif yukarı kayacak */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Hafif bir gölge efekti */
+    border-radius: 5px;
 }
   
 
@@ -313,6 +325,7 @@ h1 {
     padding: 20px;
     gap: 20px;
 }
+
 
 .card {
     background-color: #f9f9f9;
@@ -456,7 +469,7 @@ h1 {
   #input:focus {
     box-shadow: 0 0 0 1px #e8e8e8, 0 0 0 3px rgb(92, 127, 202);
   }
-/*Contact-Cardse*/
+/*Contact-Cards*/
 #contact .contact-items {
         display: flex;
         flex-direction: row;
@@ -475,20 +488,7 @@ h1 {
         transition: transform 0.3s ease; /* Hover animasyonu */
         margin-bottom: 20px;
     }
-    
-    /* 1113px ve daha küçük ekranlar için */
-    @media (max-width: 1113px) {
-        #contact .contact-items {
-            flex-direction: column; /* Kartları üst üste diz */
-            align-items: center;
-        }
-        
-        #contact .contact-item {
-            width: 60%; /* Kartların genişliği ekran genişliğinin %60'ı olur */
-            margin-bottom: 20px; /* Kartlar arasında boşluk bırak */
-;
-        }
-    }
+
 /* Footer */
 #main-footer {
         background-color: #333; /* Koyu gri arka plan rengi */
@@ -542,17 +542,7 @@ h1 {
         color: #ccc; /* Telif hakkı kısmı için daha soluk bir beyaz */
       }
       
-      @media (max-width: 768px) {
-        .footer-links a {
-          margin: 0 10px;
-          font-size: 14px;
-        }
-        
-        .footer-social img {
-          width: 30px;
-          height: 30px;
-        }
-      }
+      
       /*404*/
       .body-2{
         display: flex;

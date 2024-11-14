@@ -1,0 +1,55 @@
+@media (max-width:620px){
+    .navbar-header {
+        flex-direction: column; /* Navigasyonu dikey yapmak için */
+    }
+}
+/* 1113px ve daha küçük ekranlar için */
+@media (max-width: 1113px) {
+    #contact .contact-items {
+        flex-direction: column; /* Kartları üst üste diz */
+        align-items: center;
+    }
+    
+    #contact .contact-item {
+        width: 90%; /* Kartların genişliği ekran genişliğinin %60'ı olur */
+        margin-bottom: 20px; /* Kartlar arasında boşluk bırak */
+        align-items: center;
+    }
+}
+/*Footer*/
+@media (max-width: 768px) {
+    .footer-links a {
+      margin: 0 10px;
+      font-size: 14px;
+    }
+    
+    .footer-social img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    
+
+    .content-me {
+        padding: 0 10px; /* Sağ ve sol boşlukları azaltın */
+    }
+
+    .content-services {
+        flex-direction: column; /* Servis kartlarını alt alta dizin */
+        padding: 10px;
+    }
+    
+    .card {
+        width: 100%; /* Kartların genişliği ekranın tamamını kapsar */
+    }
+
+    .footer-container {
+        flex-direction: column; /* Footer içeriklerini alt alta dizin */
+    }
+}
+/*@media(max-width:556){
+    .contact-item{
+        width: 100% !important;
+    }
+}*/
