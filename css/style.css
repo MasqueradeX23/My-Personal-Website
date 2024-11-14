@@ -242,7 +242,7 @@ h1 {
     justify-content: center; /* Resmi ve yazıyı ortalar */
     align-items: center;
     height: 100vh;
-    background: url('/img/background.webp') no-repeat center center fixed;
+    background: url('../img/background.png') no-repeat center center fixed;
     background-size: cover;
 }
 
